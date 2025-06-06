@@ -16,9 +16,9 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-    { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
-    { name: 'Blog', href: '/blog' }
+    { name: 'About', href: 'klackx-neon-glow-web.vercel.app/about' },
+    { name: 'Contact', href: 'klackx-neon-glow-web.vercel.app/contact' },
+    { name: 'Blog', href: 'klackx-neon-glow-web.vercel.app/blog' }
   ];
 
   return (
@@ -56,7 +56,7 @@ const Navigation = () => {
 
           {/* Right side icon/button */}
           <div className="hidden md:block">
-            <a href="/contact">
+            <a href="klackx-neon-glow-web.vercel.app/contact">
               <Button className="gradient-button">
                 Get Started
               </Button>
@@ -89,7 +89,7 @@ const Navigation = () => {
                 </a>
               ))}
               <div className="pt-2">
-                <a href="/contact">
+                <a href="klackx-neon-glow-web.vercel.app/contact">
                   <Button className="gradient-button w-full">
                     Get Started
                   </Button>
