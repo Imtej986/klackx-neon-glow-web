@@ -47,6 +47,14 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', sans-serif;
+    background-image: 
+      linear-gradient(90deg, rgba(0, 255, 127, 0.03) 1px, transparent 1px),
+      linear-gradient(180deg, rgba(0, 255, 127, 0.03) 1px, transparent 1px),
+      linear-gradient(135deg, rgba(0, 255, 127, 0.02) 0%, transparent 50%),
+      radial-gradient(circle at 20% 80%, rgba(0, 255, 127, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(0, 255, 127, 0.05) 0%, transparent 50%);
+    background-size: 100px 100px, 100px 100px, 200% 200%, 150% 150%, 150% 150%;
+    background-position: 0 0, 0 0, 0 0, 0 0, 0 0;
   }
 
   html {
@@ -60,7 +68,7 @@
   }
 
   .glow-card {
-    @apply bg-card/50 backdrop-blur-sm border border-border/30 shadow-2xl;
+    @apply backdrop-blur-md bg-card/30 border border-border/30 shadow-2xl;
     box-shadow: 0 0 50px rgba(0, 255, 127, 0.1), 
                 0 25px 50px -12px rgba(0, 0, 0, 0.8);
   }

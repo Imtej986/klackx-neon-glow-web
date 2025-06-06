@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 import Features from '@/components/Features';
 import Stats from '@/components/Stats';
 import CallToAction from '@/components/CallToAction';
+import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <Features />
       <Stats />
       <CallToAction />
+      <Footer />
     </div>
   );
 };

@@ -1,5 +1,6 @@
 
 import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 import { Calendar, User, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -164,6 +165,8 @@ const Blog = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };
