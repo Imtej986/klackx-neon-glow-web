@@ -59,7 +59,7 @@ const Hero = () => {
           <div className="flex items-center justify-center w-[100%] h-[100%]">
            
               {/* Placeholder for 3D visual */}
-           <iframe src='https://my.spline.design/greendiamondshapedcolumbianemerald-W953lkPsgkhgwJgaCsJ4fvFB/' frameborder='0' width='100%' height='100%'></iframe>
+           <iframe src='https://my.spline.design/greendiamondshapedcolumbianemerald-W953lkPsgkhgwJgaCsJ4fvFB/'  width='100%' height='100%'></iframe>
 
           </div>
         </div>
