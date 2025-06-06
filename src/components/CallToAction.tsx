@@ -1,7 +1,7 @@
 
 import { ArrowRight, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
+import { Link } from 'react-router-dom';
 const CallToAction = () => {
   const benefits = [
     "14-day free trial",
@@ -33,20 +33,20 @@ const CallToAction = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/contact">
+            <Link to="/contact">
               <Button className="gradient-button text-lg px-8 py-6 rounded-xl">
                 Start Free Trial
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
-            </a>
-            <a href="/contact">
+            </Link>
+            <Link to="/contact">
               <Button 
                 variant="outline" 
                 className="text-lg px-8 py-6 rounded-xl border-border hover:bg-secondary/50 transition-all duration-300"
               >
                 Schedule Demo
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

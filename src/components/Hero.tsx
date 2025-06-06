@@ -1,7 +1,7 @@
 
 import { ArrowRight, Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
+import { Link } from 'react-router-dom';
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16">
@@ -22,13 +22,13 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="/contact">
+              <Link to="/contact">
                 <Button className="gradient-button text-lg px-8 py-6 rounded-xl">
                   Start Free Trial
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
-              </a>
-              <a href="/about">
+              </Link>
+              <Link to="/about">
                 <Button 
                   variant="outline" 
                   className="text-lg px-8 py-6 rounded-xl border-border hover:bg-secondary/50 transition-all duration-300"
@@ -36,7 +36,7 @@ const Hero = () => {
                   <Play className="mr-2 w-5 h-5" />
                   Watch Demo
                 </Button>
-              </a>
+              </Link>
             </div>
 
             <div className="flex items-center space-x-8 pt-8">

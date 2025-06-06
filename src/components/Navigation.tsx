@@ -30,12 +30,12 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center space-x-2">
-              <a href="/" className="flex items-center space-x-2">
+              <Link to="/" className="flex items-center space-x-2">
                 <div className="w-8 h-8 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center">
                   <Zap className="w-5 h-5 text-primary-foreground" />
                 </div>
                 <span className="text-2xl font-bold gradient-text">KlackX</span>
-              </a>
+              </Link>
             </div>
           </div>
 
