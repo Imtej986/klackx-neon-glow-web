@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
+import { Link } from 'react-router-dom';
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,9 +16,9 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-    { name: 'About', href: 'klackx-neon-glow-web.vercel.app/about' },
-    { name: 'Contact', href: 'klackx-neon-glow-web.vercel.app/contact' },
-    { name: 'Blog', href: 'klackx-neon-glow-web.vercel.app/blog' }
+    { name: 'About', href: '/about' },
+    { name: 'Contact', href: '/contact' },
+    { name: 'Blog', href: '/blog' }
   ];
 
   return (
@@ -43,24 +43,24 @@ const Navigation = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.name}
-                  href={link.href}
+                  to={link.href}
                   className="text-foreground hover:text-primary transition-colors duration-300 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
 
           {/* Right side icon/button */}
           <div className="hidden md:block">
-            <a href="klackx-neon-glow-web.vercel.app/contact">
+            <Link to="/contact">
               <Button className="gradient-button">
                 Get Started
               </Button>
-            </a>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -79,21 +79,21 @@ const Navigation = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 glass-nav rounded-lg mt-2">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.name}
-                  href={link.href}
+              to={link.href}
                   className="text-foreground hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
               <div className="pt-2">
-                <a href="klackx-neon-glow-web.vercel.app/contact">
+                <Link to="/contact">
                   <Button className="gradient-button w-full">
                     Get Started
                   </Button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
