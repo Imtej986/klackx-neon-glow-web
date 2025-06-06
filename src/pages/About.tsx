@@ -71,7 +71,7 @@ const About = () => {
             </div>
             <div className="flex items-center justify-center">
               <div className="w-full h-96 bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl border border-border/30 flex items-center justify-center animate-float">
-                <div className="text-6xl text-primary/30 font-bold">Story</div>
+<iframe src='https://my.spline.design/dunes-qkSUcUfizqjvn2L36OroXBNg/'  width='120%' height='120%'></iframe>
               </div>
             </div>
           </div>

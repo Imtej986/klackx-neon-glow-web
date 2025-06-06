@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16">
       <div className="max-w-7xl mx-auto w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid h-[1200px] lg:h-[600px] grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Content */}
           <div className="space-y-8 animate-fade-in-left">
             <div className="space-y-4">
@@ -55,15 +55,11 @@ const Hero = () => {
           </div>
 
           {/* Right side - 3D Visual Space */}
-          <div className="flex items-center justify-center">
-            <div className="w-full h-96 lg:h-[500px] bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl border border-border/30 flex items-center justify-center relative overflow-hidden animate-float">
+          <div className="flex items-center justify-center w-[100%] h-[100%]">
+           
               {/* Placeholder for 3D visual */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5"></div>
-              <div className="absolute top-4 right-4 w-20 h-20 bg-primary/20 rounded-full blur-xl animate-pulse-glow"></div>
-              <div className="absolute bottom-4 left-4 w-16 h-16 bg-accent/20 rounded-full blur-lg animate-pulse-glow" style={{animationDelay: '1s'}}></div>
-              <div className="text-6xl text-primary/30 font-bold">3D</div>
-              <div className="absolute inset-0 backdrop-blur-[1px]"></div>
-            </div>
+           <iframe src='https://my.spline.design/greendiamondshapedcolumbianemerald-W953lkPsgkhgwJgaCsJ4fvFB/' frameborder='0' width='100%' height='100%'></iframe>
+
           </div>
         </div>
       </div>
