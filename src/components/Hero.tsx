@@ -1,3 +1,4 @@
+
 import { ArrowRight, Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -54,14 +55,23 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right side - 3D Visual Space */}
+          {/* Right side - Image */}
           <div className="flex items-center justify-center">
             <div className="w-full h-96 lg:h-[500px] bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl border border-border/30 flex items-center justify-center relative overflow-hidden animate-float">
-              {/* Placeholder for 3D visual */}
+              {/* Background effects */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5"></div>
               <div className="absolute top-4 right-4 w-20 h-20 bg-primary/20 rounded-full blur-xl animate-pulse-glow"></div>
               <div className="absolute bottom-4 left-4 w-16 h-16 bg-accent/20 rounded-full blur-lg animate-pulse-glow" style={{animationDelay: '1s'}}></div>
-              <div className="text-6xl text-primary/30 font-bold">3D</div>
+              
+              {/* Main image */}
+              <img 
+                src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80" 
+                alt="Modern technology visualization" 
+                className="w-full h-full object-cover rounded-3xl opacity-80"
+              />
+              
+              {/* Overlay effects */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl"></div>
               <div className="absolute inset-0 backdrop-blur-[1px]"></div>
             </div>
           </div>
