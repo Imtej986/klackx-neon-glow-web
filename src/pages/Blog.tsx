@@ -1,4 +1,3 @@
-
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Calendar, User, ArrowRight } from 'lucide-react';
@@ -62,7 +61,6 @@ const Blog = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      {/* Hero Section */}
       <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl sm:text-6xl font-bold mb-6 animate-fade-in-up">
@@ -76,7 +74,6 @@ const Blog = () => {
         </div>
       </section>
 
-      {/* Categories */}
       <section className="pb-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-wrap justify-center gap-4 animate-fade-in-up" style={{animationDelay: '0.3s'}}>
@@ -93,7 +90,6 @@ const Blog = () => {
         </div>
       </section>
 
-      {/* Blog Posts */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -141,7 +137,6 @@ const Blog = () => {
         </div>
       </section>
 
-      {/* Newsletter CTA */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary/20">
         <div className="max-w-4xl mx-auto text-center">
           <div className="glow-card p-8 rounded-2xl animate-fade-in-up">
@@ -158,9 +153,11 @@ const Blog = () => {
                 placeholder="Enter your email"
                 className="flex-1 px-4 py-3 rounded-lg bg-background/50 border border-border focus:outline-none focus:ring-2 focus:ring-primary"
               />
-              <Button className="gradient-button px-6 py-3">
-                Subscribe
-              </Button>
+              <a href="/contact">
+                <Button className="gradient-button px-6 py-3">
+                  Subscribe
+                </Button>
+              </a>
             </div>
           </div>
         </div>
